@@ -1,0 +1,73 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color:$hero-background-color;
+  
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid black;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/Img-hero.jpg");
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__container {
+        text-align: center;
+      }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        /*width: 696px;*/
+        margin-left: auto;
+        margin-right: auto;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      
+        color: $primary-white-color;
+        @media  screen and  (max-width: 1199px){
+          font-size: 26px;
+        line-height: 1.62;
+        }
+          
+        
+      }
+      
+    &__button {
+        background-color: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        padding: 10px 32px;
+        min-width: 200px;
+      
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+      
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: $primary-white-color;
+    
+    
+        &:hover,
+        &:focus{
+          cursor: pointer;
+          background-color: $hero-button-color;
+        }
+      }
+      
+  }
+  
+ 

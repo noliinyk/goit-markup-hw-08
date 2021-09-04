@@ -1,0 +1,92 @@
+.footer__form {
+  @media screen and (min-width: $desktop){
+    margin-left: 93px;
+    margin-top: 12px;}
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
+  
+}
+  .footer__forms{
+    @media screen and (min-width: $desktop){
+      display: flex;
+    }
+  
+  }
+
+  #footer__follow-mail{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 15px 16px;
+    width: 358px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: $hero-background-color;
+    margin-right: 15px;
+
+    outline: none;
+    color: $primary-white-color;
+    
+    @media screen and (max-width: 1199px){
+    margin-bottom:20px;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
+    &::placeholder{
+    
+        color: rgba(255, 255, 255, 0.6);
+       
+      }
+  }
+
+
+  .footer__follow-button{
+    display: block;
+    text-align: left;
+    align-items: center;
+   position: relative;
+   margin-left: auto;
+    margin-right: auto;
+ 
+
+    width: 200px;
+    background-color: $accent-color;
+    color: $primary-white-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border: none;
+
+    @media screen and (min-width: $mobile) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+   
+
+    }
+
+  }
+
+.footer__send{
+    position: absolute;
+    bottom:13px;
+    left: 148px;
+
+    /*margin-left: 10px;*/
+
+    fill: $primary-white-color;
+  }
+  
+
+  

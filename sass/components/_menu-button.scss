@@ -1,0 +1,131 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px 15px 10px 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  
+  outline: none;
+
+@media screen and (min-width: 768px) {
+      display: none;
+    }
+&:hover,
+&:focus {
+  background-color:$accent-color;
+}
+
+  }
+  
+  /*.menu-toggle .mobile-cross {
+    display: none;
+  }*/
+  
+ .menu-container.is-open .menu-toggle {
+    justify-content: center;
+    position: absolute;
+    top:0;
+    right: 0;
+  }
+  .menu-container.is-open .menu-container{
+    position: relative;
+  }
+  
+   .mobile-cross:hover {
+     background-color: $primary-white-color;
+    fill:$accent-color;
+  }
+  
+  .menu-toggle.is-open .mobile-menu {
+    display: none;
+   
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100hw;
+    
+    background-color:$primary-white-color;
+    /*z-index: 999;*/
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+
+    
+   
+   
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    font-size: 20px;
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+  
+      
+      &.is-open {
+        display: block;
+        transform: translateX(0);
+       
+      }
+    
+  
+    
+  }
+
+  .nav-socials--mobile{
+    display: flex;
+    margin-top:64px;
+   
+    @media screen and (min-width: $tablet){
+        display: none;
+    } 
+  }
+    .nav-socials__list--mobile{
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+
+       
+    
+        &:first-child{
+            margin-left: 0px;
+        }
+        &:last-child{
+            margin-right: 0px;
+        }
+    } 
+    .nav-socials__link{
+        display: flex;
+        color: $accent-color;
+        
+        &::before{
+            margin-right: 10px;
+
+            display: block;
+            content: "";
+            height: 22px;
+            width: 0px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+
+
+
+
+

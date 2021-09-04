@@ -1,0 +1,35 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+  
+  &__list {
+    margin-right: 0px;
+    margin-top: 16px;
+    margin-left: 0;
+  
+        &:not(:last-child) {
+            margin-right: 10px;
+          }
+  }
+  
+  
+  &__meta {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $social-links-fill;
+  
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      fill: $primary-white-color;
+    }
+  }
+}
+  
