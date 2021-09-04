@@ -11,8 +11,24 @@
   }
 
 &__buttons {
-    /*display: flex;
-    justify-content: center;*/
+    display: flex;
+
+    
+
+    @media screen and (max-width:767px){
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width:$tablet){
+    justify-content: center;
+    }
+  }
+  &__list{
+    @media screen and (max-width:767px){
+      &:nth-child(4),
+      &:nth-child(5) {
+        margin-top:15px ;
+      }
+    }
   }
   
 &__item{

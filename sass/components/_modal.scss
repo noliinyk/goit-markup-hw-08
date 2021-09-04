@@ -13,6 +13,7 @@
 
     @media screen and (max-width: 767px){
       padding: 93px 15px 94px 15px;
+      overflow-y: scroll;
     }
 
   }
@@ -23,13 +24,8 @@
   }
   
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-  
-    min-height: 581px;
-    min-width: 528px;
+    
+    
 
     padding: 0;
     margin: 0;
@@ -38,11 +34,25 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   
-    transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 
     @media screen and (max-width: 767px){
-    min-height: 450px;
-    min-width: 609px;
+      position: relative;
+    max-width: 450px;
+    max-height: 609px;
+
+    }
+    @media screen and (min-width: 768px){
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    }
+    @media screen and (min-width: 1199px){
+      min-height: 581px;
+      min-width: 528px;
     }
 
     .backdrop.is-hidden &{
@@ -51,10 +61,13 @@
     }
 
     &__form {
-      width: 528px;
+     
       padding: 40px;
       @media screen and (max-width: 767px){
-        width: 450px;
+        max-width: 450px;
+      }
+      @media screen and (min-width: 1199px){
+        width: 528px;
       }
     }
 
@@ -91,7 +104,7 @@
       &__slogan{
         font-weight: 700;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.5;
         text-align: center;
         
         
@@ -249,6 +262,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and(max-width:787px) {
+      font-size: 12px;
+      line-height: 1.16;
+    }
   }
   .form-field__policy-link{
   

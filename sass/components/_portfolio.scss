@@ -13,8 +13,11 @@
 }
 
 &__items {
-    /*display: flex;
-    flex-wrap: wrap;*/
+  @media screen and (min-width: 768px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
   }
 &__list {
     margin-right: 30px;
@@ -34,6 +37,10 @@
     &:focus{
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
           1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
+      @media screen and (min-width: 768px)  and(max-width:1199px){
+        margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);
       }
   }
  
