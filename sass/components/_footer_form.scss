@@ -6,7 +6,12 @@
     @media screen and (max-width: 1199px) {
       text-align: center;
     }
-  
+    @media screen and (min-width: $tablet)and (max-width: 1199px){
+      margin-top: 102px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
 }
   .footer__forms{
     @media screen and (min-width: $desktop){
@@ -29,11 +34,14 @@
 
     outline: none;
     color: $primary-white-color;
+
+    
     
     @media screen and (max-width: 1199px){
     margin-bottom:20px;
     margin-right: auto;
     margin-left: auto;
+    width: 450px;
     }
 
     &::placeholder{

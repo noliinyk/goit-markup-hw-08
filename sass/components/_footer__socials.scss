@@ -1,4 +1,7 @@
 .footer__socials {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
   @media screen and (min-width: $tablet)  {
      
     margin-left: 165px;
@@ -15,6 +18,11 @@
       @media screen and (min-width: $tablet)  {
         display: flex;
     }
+    @media screen and (min-width: $tablet)and (max-width:1199px){
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
   
   }
   .footer__slogan {
@@ -26,12 +34,14 @@
     color: $primary-white-color;
   
     margin-bottom: 20px;
-    @media screen and (max-width: 767px){
-      margin-top: 60px;
+    @media screen and (max-width: 1199px){
+      margin-top: 10px;
     }
+   
   }
   .socials{
     display: flex;
+    margin-top: 12px;
     @media screen and (max-width: 767px){
       justify-content: center;
   }
