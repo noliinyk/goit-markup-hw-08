@@ -1,6 +1,6 @@
 .filter {
     margin-bottom: 50px;
-    @media screen and (min-width:1199px){
+    @media screen and (min-width:$tablet){
       margin-bottom: 30px;
     }
   
